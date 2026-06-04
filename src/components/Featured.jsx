@@ -3,7 +3,6 @@ import React from "react";
 import { books } from "../data.js";
 
 const Featured = () => {
-  console.log(books);
   return (
     <section id="features">
       <div className="container">
