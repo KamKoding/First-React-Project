@@ -10,8 +10,10 @@ const Book = ({ book }) => {
   useEffect(() => {
     const image = new Image()
     image.src = book.url
-    image.onLoad = () => {
-      setImg(image);
+    image.onload = () => {
+      setTimeout(() => {
+        setImg(image);
+      }, 300);
     }
   }, [book.url])
 
